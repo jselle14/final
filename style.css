@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+:root {
+    --color-bluegray: #758A93;
+    --color-beige: #ECD5BC;
+    --color-gold: #E9B63B;
+    --color-coral: #C66E52;
+
+    --font-heading: "Lexend Peta", "Vend Sans", sans-serif;
+    --font-body: "Vend Sans", "Lexend Peta", sans-serif;
+     --max-width: 1280px;  
+}
+
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-beige);
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background: white;
+}
+
+
+header {
+    background-color: var(--color-coral);
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+
+header h1 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 2.8rem; 
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 a:hover {
+    color: var(--color-gold);
+}
+
+header h1 a:focus {
+    outline: 3px solid var(--color-bluegray) ;
+    outline-offset: 4px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: var(--color-gold);
+}
+
+nav a:focus {
+    outline: 3px solid var(--color-bluegray);
+    outline-offset: 4px;
+}
+
+
+.hero {
+    height: 380px;
+    background-image: url("images/swiss-valley.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.intro {
+    text-align: center;
+    margin: 4rem auto 5rem;
+    max-width: 700px;
+}
+
+.intro h2 {
+    font-family: var(--font-heading);
+    color: var(--color-gold);
+    margin-bottom: 1.2rem;
+}
+
+
+.content-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem 4rem;
+}
+
+
+.content-box {
+width: 48%; 
+}
+
+
+.content-box img {
+   
+    width: 100%;                 
+    height: auto;
+   display: block;
+    margin-bottom: 0.8rem;
+}
+
+
+.content-text {
+    flex: 1;
+}
+
+
+.content-box h3 {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    margin: 1rem 0;
+}
+
+
+.content-text p {
+    margin: 0;
+}
+
+
+.contact-section {
+    padding: 2rem 0;
+}
+
+
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+
+.contact-left h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-gold);
+}
+
+.contact-left p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 85%;
+}
+
+.contact-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    border-radius: 6px;
+   
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+ width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-bluegray);
+    background: var(--color-beige);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-bluegray);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.15);
+    outline: none;
+}
+
+
+.radio-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+button {
+    padding: 0.9rem;
+    background: var(--color-gold);
+    color: var(--color-bluegray);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+    background: var(--color-coral);
+}
+
+
+button:focus {
+    outline: 3px solid rgba(0,0,0,0.3);
+}
+
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+footer {
+    background-color: var(--color-coral);
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+}
